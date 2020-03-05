@@ -106,7 +106,7 @@ public class HistogramOfOccurrence extends Application {
                     }
 
                     for (char c : CHArr) { // putting the letter into the respectve index of array. Example if the letter is 'C', will go into 3rd index
-                        int convert = (Character.getNumericValue(c) - Character.getNumericValue('a'));
+                        int convert = Math.abs(Character.getNumericValue(c) - Character.getNumericValue('a'));
                             arr[convert]++; // adding number of occurrence
 
                     }
